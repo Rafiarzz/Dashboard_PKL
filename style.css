@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.logo {
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.medsos {
+  text-align: center;
+  background-color: #fff;
+  padding: 5px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.medsos ul.social {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+
+.medsos ul.social li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.medsos ul.social li a {
+  color: #3a6db4;
+  font-size: 20px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.medsos ul.social li a:hover {
+  color: springgreen;
+  transform: scale(1.2);
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #3a6db4;
+}
+
+.dashboard-frame {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f0f0f0;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode .medsos {
+  background-color: #2a2a2a;
+}
+
+body.dark-mode .medsos ul.social li a {
+  color: #00ffff;
+}
+
+body.dark-mode .title {
+  color: #00ffff;
+}
+
+body.dark-mode .dashboard-frame {
+  background-color: #2b2b2b;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode footer {
+  background-color: #2a2a2a;
+  color: #ccc;
+}

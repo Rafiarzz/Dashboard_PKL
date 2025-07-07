@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PT Munggaran Jaya Utama - Build Intelligent System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Media Sosial & Logo -->
+  <div class="medsos">
+    <div class="container">
+      <ul class="social">
+        <H1 style="color:#3a6db4;">MJU ASIA</H1>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tombol Mode Gelap -->
+  <div style="text-align: center; margin-bottom: 20px;">
+    <button id="toggle-dark-mode" style="padding: 10px 20px; background-color: #3a6db4; color: white; border: none; border-radius: 5px; cursor: pointer;">
+      Mode Gelap
+    </button>
+  </div>
+
+  <!-- Judul Dashboard -->
+  <div class="container">
+    <h1 class="title">Dashboard Keuangan</h1>
+
+    <!-- Embed Looker Studio -->
+    <div class="dashboard-frame">
+      <iframe 
+        src="https://lookerstudio.google.com/embed/reporting/62b0e7bc-1300-4f25-949c-7832f5da3eb7/page/H5BQF" 
+        width="1080" 
+        height="800" 
+        frameborder="0" 
+        style="border:0;" 
+        allowfullscreen 
+        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <small style="text-align: center;">&copy; 2025 MJU. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+  const toggleButton = document.getElementById("toggle-dark-mode");
+  const body = document.body;
+
+  toggleButton.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    toggleButton.textContent = body.classList.contains("dark-mode") ? "Mode Terang" : "Mode Gelap";
+  });
+  </script>
+</body>
+</html>
